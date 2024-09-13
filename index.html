@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web Interactiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">DAMIAN</div>
+        <div class="buttons">
+            <button class="btn btn-color1" onclick="clearDisplay()">C</button>
+            <button class="btn btn-color1" onclick="appendOperator('/')">/</button>
+            <button class="btn btn-color1" onclick="appendOperator('*')">*</button>
+            <button class="btn btn-color1" onclick="appendOperator('-')">-</button>
+
+            <button class="btn btn-color2" onclick="appendNumber('7')">7</button>
+            <button class="btn btn-color2" onclick="appendNumber('8')">8</button>
+            <button class="btn btn-color2" onclick="appendNumber('9')">9</button>
+            <button class="btn btn-color1" onclick="appendOperator('+')">+</button>
+
+            <button class="btn btn-color2" onclick="appendNumber('4')">4</button>
+            <button class="btn btn-color2" onclick="appendNumber('5')">5</button>
+            <button class="btn btn-color2" onclick="appendNumber('6')">6</button>
+            <button class="btn btn-color3" onclick="calculateResult()">=</button>
+
+            <button class="btn btn-color2" onclick="appendNumber('1')">1</button>
+            <button class="btn btn-color2" onclick="appendNumber('2')">2</button>
+            <button class="btn btn-color2" onclick="appendNumber('3')">3</button>
+            <button class="btn btn-color3" onclick="appendNumber('.')">.</button>
+
+            <button class="btn btn-color2" onclick="appendNumber('0')" id="zero">0</button>
+            <button class="btn btn-color4" onclick="appendOperator('%')">%</button>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
